@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forensic Interns Capstone Project</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-logo-container">
+            <img src="images/EY-Logo.png" alt="EY Logo" class="nav-logo-img">
+            <div class="nav-logo-text">Forensic Repository</div>
+        </div>
+        <button class="nav-toggle" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#repository">Repository</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#advanced-search">Advanced Search</a></li>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#faq">Help/FAQ</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div id="content">
+        <!-- Home Section -->
+        <section id="home" class="section">
+            <div class="container">
+                <h1>Welcome to the Forensic Interns Capstone Project</h1>
+                <p>Your go-to platform for accessing and contributing thought leadership materials in forensic practice.</p>
+                <a href="#repository" class="btn">Explore Repository</a>
+            </div>
+        </section>
+        <!-- Repository Section -->
+        <section id="repository" class="section">
+            <div class="container">
+                <h2>Repository</h2>
+                <p>Search and access our extensive collection of thought leadership materials.</p>
+                <!-- Search bar with filters -->
+                <div class="search-container">
+                    <input type="text" placeholder="Search..." class="search-input">
+                    <button class="search-btn"><i class="fa fa-search"></i></button>
+                </div>
+                <div class="filter-container">
+                    <label>
+                        Category:
+                        <select class="search-filter">
+                            <option value="all">All</option>
+                            <option value="digital-forensics">Digital Forensics</option>
+                            <option value="fraud-detection">Fraud Detection</option>
+                            <option value="cybersecurity">Cybersecurity</option>
+                        </select>
+                    </label>
+                    <label>
+                        Date:
+                        <select class="search-filter">
+                            <option value="all-time">All Time</option>
+                            <option value="last-year">Last Year</option>
+                            <option value="last-month">Last Month</option>
+                        </select>
+                    </label>
+                </div>
+                <!-- Placeholder for search results -->
+                <div id="search-results"></div>
+                <!-- Loading indicator -->
+                <div id="loading-spinner" style="display: none;">
+                    <i class="fa fa-spinner fa-spin"></i> Loading...
+                </div>
+            </div>
+        </section>
+        <!-- Featured Section -->
+        <section id="featured" class="section">
+            <div class="container">
+                <h2>Featured Materials</h2>
+                <p>Check out some of our latest and most popular thought leadership materials.</p>
+                <div class="featured-container">
+                    <div class="featured-item">
+                        <h3>Digital Forensics Best Practices</h3>
+                        <p>An in-depth guide on best practices in digital forensics.</p>
+                    </div>
+                    <div class="featured-item">
+                        <h3>Emerging Trends in Forensic Accounting</h3>
+                        <p>Explore the latest trends and techniques in forensic accounting.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2024 Forensic Interns Capstone Project. All rights reserved.</p>
+                <ul class="footer-links">
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                    <li><a href="#terms">Terms of Service</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
