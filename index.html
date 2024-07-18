@@ -10,95 +10,112 @@
 <body>
     <nav class="navbar">
         <div class="nav-logo-container">
-            <img src="images/EY-Logo.png" alt="EY Logo" class="nav-logo-img">
+            <img src="images/ey-logo.png" alt="EY Logo" class="nav-logo-img">
             <div class="nav-logo-text">Forensic Repository</div>
         </div>
-        <button class="nav-toggle" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
-            <li><a href="#repository">Repository</a></li>
+            <li><a href="landing.html">Repository</a></li>
             <li><a href="#categories">Categories</a></li>
-            <li><a href="#advanced-search">Advanced Search</a></li>
-            <li><a href="#profile">Profile</a></li>
+            <li><a href="#login">Login/Register</a></li>
             <li><a href="#faq">Help/FAQ</a></li>
-            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>where 
         </ul>
     </nav>
     <div id="content">
         <!-- Home Section -->
         <section id="home" class="section">
             <div class="container">
-                <h1>Welcome to the Forensic Interns Capstone Project</h1>
-                <p>Your go-to platform for accessing and contributing thought leadership materials in forensic practice.</p>
+                <h1>Welcome to the Boston Forensics Capstone Project</h1>
                 <a href="#repository" class="btn">Explore Repository</a>
             </div>
         </section>
-        <!-- Repository Section -->
-        <section id="repository" class="section">
-            <div class="container">
-                <h2>Repository</h2>
-                <p>Search and access our extensive collection of thought leadership materials.</p>
-                <!-- Search bar with filters -->
-                <div class="search-container">
-                    <input type="text" placeholder="Search..." class="search-input">
-                    <button class="search-btn"><i class="fa fa-search"></i></button>
-                </div>
-                <div class="filter-container">
-                    <label>
-                        Category:
-                        <select class="search-filter">
-                            <option value="all">All</option>
-                            <option value="digital-forensics">Digital Forensics</option>
-                            <option value="fraud-detection">Fraud Detection</option>
-                            <option value="cybersecurity">Cybersecurity</option>
-                        </select>
-                    </label>
-                    <label>
-                        Date:
-                        <select class="search-filter">
-                            <option value="all-time">All Time</option>
-                            <option value="last-year">Last Year</option>
-                            <option value="last-month">Last Month</option>
-                        </select>
-                    </label>
-                </div>
-                <!-- Placeholder for search results -->
-                <div id="search-results"></div>
-                <!-- Loading indicator -->
-                <div id="loading-spinner" style="display: none;">
-                    <i class="fa fa-spinner fa-spin"></i> Loading...
-                </div>
+
+
+
+<!-- Repository Section -->
+<section id="repository" class="section">
+    <div class="container">
+        <h2>Repository</h2>
+        <p>Search and access our extensive collection of thought leadership materials.</p>
+        <!-- Search bar with filters -->
+        <div class="search-container">
+            <input type="text" placeholder="Search..." class="search-input">
+            <button class="search-btn"><i class="fa fa-search"></i></button>
+        </div>
+        <div class="filter-container">
+            <label for="category-filter">Category:</label>
+            <select id="category-filter" class="search-filter">
+                <option value="all">All</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+            </select>
+            <label for="service-filter">Service:</label>
+            <select id="service-filter" class="search-filter">
+                <option value="all">All</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+            </select>
+            <label for="sector-filter">Sector:</label>
+            <select id="sector-filter" class="search-filter">
+                <option value="all">All</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+            </select>
+        </div>
+        <!-- Search by Keywords -->
+        <div class="keyword-search-container">
+            <h3>Search by Keywords</h3>
+            <div class="keywords">
+                <button class="keyword-btn">A</button>
+                <button class="keyword-btn">B</button>
+                <button class="keyword-btn">C</button>
+                <button class="keyword-btn">D</button>
+                <button class="keyword-btn">E</button>
+                <button class="keyword-btn">F</button>
             </div>
-        </section>
-        <!-- Featured Section -->
-        <section id="featured" class="section">
-            <div class="container">
-                <h2>Featured Materials</h2>
-                <p>Check out some of our latest and most popular thought leadership materials.</p>
-                <div class="featured-container">
-                    <div class="featured-item">
-                        <h3>Digital Forensics Best Practices</h3>
-                        <p>An in-depth guide on best practices in digital forensics.</p>
-                    </div>
-                    <div class="featured-item">
-                        <h3>Emerging Trends in Forensic Accounting</h3>
-                        <p>Explore the latest trends and techniques in forensic accounting.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="container">
-                <p>&copy; 2024 Forensic Interns Capstone Project. All rights reserved.</p>
-                <ul class="footer-links">
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#privacy">Privacy Policy</a></li>
-                    <li><a href="#terms">Terms of Service</a></li>
-                </ul>
-            </div>
-        </footer>
+        </div>
+        <!-- Placeholder for search results -->
+        <div id="search-results"></div>
+        <!-- Loading indicator -->
+        <div id="loading-spinner" style="display: none;">
+            <i class="fa fa-spinner fa-spin"></i> Loading...
+        </div>
     </div>
-    <script src="scripts.js"></script>
+</section>
+
+        
+       <!-- Featured Materials Section -->
+       <section id="featured-materials" class="section">
+        <div class="container">
+            <h2>Featured Materials</h2>
+            <div class="featured-materials">
+                <div class="featured-material">
+                    <h3>Digital Forensics Best Practices</h3>
+                    <p>Explore the best practices in digital forensics to ensure the integrity and accuracy of your investigations.</p>
+                    <a href="https://www.ey.com/en_in/assurance/forensic-investigations-compliance" class="btn">Learn More</a>
+                </div>
+                <div class="featured-material">
+                    <h3>EY's Initative To Invest In Accounting</h3>
+                    <p>Stay updated with the EY's commitiment to improve the attractiveness of the accounting profession.</p>
+                    <a href="https://www.ey.com/en_us/newsroom/2024/06/ey-us-to-invest-1-billion-in-compensation-and-technology#:~:text=AI%2Denabled%20tax%20and%20audit%20processes&text=As%20digitization%20and%20AI%20technologies,insights%20on%20key%20business%20issues." class="btn">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </div>
+
+
+
+
+
 </body>
 </html>
+
